@@ -1,3 +1,5 @@
 <h1>
   {{title}}
 </h1>
+<button *ngIf="auth" style="float:right;" (click)="af.auth.logout()">Logout</button>
+<router-outlet></router-outlet>
