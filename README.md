@@ -16,6 +16,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+NOTE: there is a known issue [angular-cli/issues/977](https://github.com/angular/angular-cli/issues/977) on Windows where ng test fails to run.  As a workaround, npm test will run ng build && ng test --build=false and will work.
 
 ## Running end-to-end tests
 
