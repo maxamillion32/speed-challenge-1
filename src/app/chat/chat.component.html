@@ -1,0 +1,9 @@
+<p>
+  Welcome, <span *ngIf="user">{{user.username}}</span>
+</p>
+<input type="text" #message (click)="send(message)" placeholder="type your message" (keyup.enter)="send(message)">
+<ul style="max-height: 80vh;overflow-y:auto;">
+  <li *ngFor="let message of messages | async">
+    <span><img [attr.src]="message.avatar" alt="avatar" height="25" width="25"></span> {{message.username}}: {{message.message}}
+  </li>
+</ul>

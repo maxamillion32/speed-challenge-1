@@ -1,0 +1,3 @@
+
+<button *ngIf="!loggedIn" *ngFor="let provider of providers" (click)="login(provider)">Login with {{provider}}</button>
+<button *ngIf="loggedIn" (click)="af.auth.logout()">Logout</button>
